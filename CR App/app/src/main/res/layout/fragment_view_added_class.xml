@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <View
+            android:id="@+id/viewClassName"
+            android:layout_width="323dp"
+            android:layout_height="76dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:foreground="@drawable/viewborder" />
+        <View
+            android:id="@+id/viewTotalStudents"
+            android:layout_width="323dp"
+            android:layout_height="76dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/viewClassName"
+            android:layout_marginTop="30dp"
+            android:foreground="@drawable/viewborder" />
+
+        <TextView
+            android:id="@+id/lblClassNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/viewClassName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="98dp"
+            android:text="Class Name" />
+
+        <TextView
+            android:id="@+id/lblTotalStudentsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblClassNameView"
+            android:layout_marginTop="205dp"
+            android:text="Total Students" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="125dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/viewTotalStudents"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#ff0000"
+            android:text="Delete"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/lblClassName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/viewClassName"
+            android:layout_marginBottom="10dp"
+            android:text="Class Name"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lblTotalStudents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/viewTotalStudents"
+            android:layout_marginBottom="10dp"
+            android:text="Total Students"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTimeTable">
+
+    <TextView
+        android:id="@+id/lblTimeTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Table"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtSubjectName"
+        android:layout_width="247dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Subject Name"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:background="@drawable/border"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        />
+
+    <Spinner
+        android:id="@+id/dropdownDay"
+        android:layout_width="247dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/txtSubjectName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dropdownday"
+        android:entries="@array/Days" />
+
+
+    <EditText
+        android:id="@+id/startTime"
+        android:layout_width="247dp"
+        android:layout_height="48dp"
+        android:hint="Choose Starting Time: "
+        android:background="@drawable/timeselector"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/dropdownDay"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/lblTimeFormat"
+        android:layout_width="70dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/dropdownDay"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/startTime"
+        android:layout_marginLeft="4dp"
+        android:text="24 hour format" />
+
+    <EditText
+        android:id="@+id/endTime"
+        android:layout_width="247dp"
+        android:layout_height="48dp"
+        android:hint="Choose Ending Time: "
+        android:background="@drawable/timeselector"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/startTime"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/lblTimeFormatEnd"
+        android:layout_width="70dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/startTime"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/endTime"
+        android:layout_marginLeft="4dp"
+        android:text="24 hour format" />
+
+    <Button
+        android:id="@+id/addTimeTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#48BBC5"
+        android:text="Add"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/endTime"
+        android:layout_alignRight="@+id/endTime"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

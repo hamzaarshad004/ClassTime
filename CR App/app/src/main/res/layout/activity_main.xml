@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblSignUp"
+        android:layout_width="196dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="monospace"
+        android:lineSpacingExtra="30sp"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Sign Up" />
+
+    <TextView
+        android:id="@+id/lblClassTime"
+        android:layout_width="231dp"
+        android:layout_height="60dp"
+        android:fontFamily="casual"
+        android:lineSpacingExtra="30sp"
+        android:text="Class Time"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="45sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSignUp"
+        tools:text="Class Time" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Enter your Name"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblClassTime"
+        app:layout_constraintVertical_bias="0.68" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Enter your Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtConfirmPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtConfirmPassword"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/rbCR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblUserType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="User Type"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/rbCR"
+        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfirmPassword"
+        tools:text="User Type" />
+
+    <RadioButton
+        android:id="@+id/rbCR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="36dp"
+        android:text="CR"
+        app:layout_constraintEnd_toStartOf="@+id/rbStudent"
+        app:layout_constraintTop_toBottomOf="@+id/lblClassTime" />
+
+    <RadioButton
+        android:id="@+id/rbStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="68dp"
+        android:text="Student"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:background="#48BBC5"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <TextView
+        android:id="@+id/lblAlready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Already Have an Account?"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/lblSignIn"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblUserType" />
+
+    <TextView
+        android:id="@+id/lblSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="44dp"
+        android:clickable="true"
+        android:text="Sign In"
+        android:textColor="#0000EE"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbStudent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

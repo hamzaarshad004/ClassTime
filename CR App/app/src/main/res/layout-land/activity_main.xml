@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblSignUp"
+        android:layout_width="195dp"
+        android:layout_height="46dp"
+        android:fontFamily="monospace"
+        android:lineSpacingExtra="30sp"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="66dp"
+        tools:text="Sign Up" />
+
+    <TextView
+        android:id="@+id/lblClassTime"
+        android:layout_width="250dp"
+        android:layout_height="67dp"
+        android:fontFamily="casual"
+        android:lineSpacingExtra="30sp"
+        android:text="Class Time"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="45sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="73dp"
+        tools:text="Class Time" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="265dp"
+        android:layout_height="30dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Enter your Name"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        tools:layout_editor_absoluteX="384dp"
+        tools:layout_editor_absoluteY="229dp" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="265dp"
+        android:layout_height="30dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Enter your Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        tools:layout_editor_absoluteX="337dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="265dp"
+        android:layout_height="30dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        tools:layout_editor_absoluteX="295dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <EditText
+        android:id="@+id/txtConfirmPassword"
+        android:layout_width="265dp"
+        android:layout_height="30dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <TextView
+        android:id="@+id/lblUserType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Type"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="156dp"
+        tools:text="User Type" />
+
+    <RadioButton
+        android:id="@+id/rbCR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CR"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <RadioButton
+        android:id="@+id/rbStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student"
+        tools:layout_editor_absoluteX="242dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="110dp"
+        android:layout_height="46dp"
+        android:background="#48BBC5"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="204dp" />
+
+    <TextView
+        android:id="@+id/lblAlready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have an Account?"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="290dp" />
+
+    <TextView
+        android:id="@+id/lblSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="#141CA5"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="290dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
