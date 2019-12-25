@@ -118,6 +118,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="216dp"
         android:layout_marginEnd="36dp"
+        android:onClick="crChecked"
         android:text="CR"
         app:layout_constraintEnd_toStartOf="@+id/rbStudent"
         app:layout_constraintTop_toBottomOf="@+id/lblClassTime" />
@@ -129,6 +130,8 @@
         android:layout_marginTop="68dp"
         android:layout_marginEnd="68dp"
         android:text="Student"
+        android:onClick="studentChecked"
+        android:checked="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
@@ -164,6 +167,7 @@
         android:layout_marginTop="112dp"
         android:layout_marginEnd="44dp"
         android:clickable="true"
+        android:onClick="signInNaviagate"
         android:text="Sign In"
         android:textColor="#0000EE"
         android:textSize="18sp"

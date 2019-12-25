@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "297686369696",
+    "firebase_url": "https://crapp-31849.firebaseio.com",
+    "project_id": "crapp-31849",
+    "storage_bucket": "crapp-31849.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297686369696:android:b9f95b851df536a08bd0c5",
+        "android_client_info": {
+          "package_name": "com.example.crapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297686369696-4brdpqki86gcmh4a3rdv2meo6fg3ko5t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.crapp",
+            "certificate_hash": "1cda7dd9f033556a48d8865c7f999f59aa46ac6b"
+          }
+        },
+        {
+          "client_id": "297686369696-q8ssatcopucrl0fj8an53of7cepb9sbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS8AsZpIo_phATirgPoRQPHkvEGN4ScLQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297686369696-q8ssatcopucrl0fj8an53of7cepb9sbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
