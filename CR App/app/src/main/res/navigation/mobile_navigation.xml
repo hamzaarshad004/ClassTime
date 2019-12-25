@@ -18,10 +18,10 @@
         tools:layout="@layout/fragment_view_added_class" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.crapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_cr_time_table"
+        android:name="com.example.crapp.ui.crTimeTable.crTimeTable"
+        android:label="Time Table"
+        tools:layout="@layout/fragment_cr_time_table" />
 
     <fragment
         android:id="@+id/nav_tools"
