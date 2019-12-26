@@ -30,10 +30,9 @@
         tools:layout="@layout/fragment_tools" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.crapp.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        android:id="@+id/nav_logOut"
+        android:name="com.example.crapp.ui.LogOut.LogOut"
+        android:label="@string/menu_share" />
 
     <fragment
         android:id="@+id/nav_send"

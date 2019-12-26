@@ -1,5 +1,6 @@
-package com.example.crapp.ui.share;
+package com.example.crapp.ui.LogOut;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,24 +13,27 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.crapp.MainActivity;
 import com.example.crapp.R;
+import com.google.firebase.auth.FirebaseAuth;
 
-public class ShareFragment extends Fragment {
+public class LogOut extends Fragment {
 
-    private ShareViewModel shareViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        shareViewModel =
-                ViewModelProviders.of(this).get(ShareViewModel.class);
         View root = inflater.inflate(R.layout.fragment_share, container, false);
-        final TextView textView = root.findViewById(R.id.text_share);
-        shareViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         return root;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        FirebaseAuth firebaseAuth;
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseAuth.signOut();
+
+        startActivity(new Intent(getContext(), MainActivity.class));
+        getActivity().finish();
     }
 }

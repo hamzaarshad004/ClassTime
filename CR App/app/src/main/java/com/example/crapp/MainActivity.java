@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -110,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
                                                 if(task.isSuccessful()){
                                                     Toast.makeText(MainActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
                                                     startActivity(new Intent(getApplicationContext(), SideBar.class));
+                                                    finish();
                                                 }
                                                 else {
                                                     Toast.makeText(MainActivity.this, "Registration Failed",
@@ -128,6 +130,24 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser currentUser = firebaseAuth.getCurrentUser();
+        if (currentUser == null){
+
+        }
+        else {
+            startActivity(new Intent(getApplicationContext(), SideBar.class));
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        finish();
     }
 
     public void crChecked(View view) {
